@@ -17,8 +17,4 @@ app.use("/api/donations", donations);
 app.use("/api/impact", impact);
 app.use("/api/contact", contact);
 
-app.get("/", (req,res)=>{
-  res.send("ONG Backend Running");
-});
-
 app.listen(process.env.PORT || 3000);
